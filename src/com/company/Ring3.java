@@ -23,6 +23,6 @@ public class Ring3 implements RingInterface {
 
     @Override
     public boolean isCorrect() {
-        return (nextRing!= null && nextRing.isCorrect() && this.getSize() > nextRing.getSize());
+        return (nextRing!= null && nextRing.isCorrect() && (this.getSize() - nextRing.getSize()) == 1);
     }
 }
